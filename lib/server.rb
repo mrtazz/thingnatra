@@ -22,6 +22,7 @@ class Thingnatra
       :namespace => Thingnatra
     }
 
+    # call super and initialize @data variable
     def initialize(*args)
       super
       @data = Thingnatra::Data.new('Database.xml')
