@@ -34,8 +34,8 @@ class Thingnatra
     end
 
     #list of today items
-    get '/today/?' do
-      @tasks = @data.get_todays_items
+    get '/things/:box/?' do |b|
+      @tasks = @data.get_items(b.to_sym)
       mustache :today
     end
 
