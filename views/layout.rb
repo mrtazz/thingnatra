@@ -6,6 +6,10 @@ class Thingnatra
         @title || "Thingnatra -- Webfrontend for Things.app data"
       end
 
+      def heading
+        @heading || "Thingnatra"
+      end
+
     end
   end
 end
