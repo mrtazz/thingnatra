@@ -10,14 +10,12 @@
     <body>
       <h1> {{ heading }} </h1>
       <div id="headernav">
-      <ul id="headernavul">
-        <li><a href="/things/inbox">Inbox</a></li>
-        <li><a href="/things/today">Today</a></li>
-        <li><a href="/things/next">Next</a></li>
-        <li><a href="/things/scheduled">Scheduled</a></li>
-      </ul>
-
-
+        <ul>
+          <li><a href="/things/inbox">Inbox</a></li>
+          <li><a href="/things/today">Today</a></li>
+          <li><a href="/things/next">Next</a></li>
+          <li><a href="/things/scheduled">Scheduled</a></li>
+        </ul>
       </div>
       <div id="maincontent">
         {{{yield}}}

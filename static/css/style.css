@@ -10,7 +10,23 @@ h1
   margin-right: auto;
 }
 
-#headernavul
+#headernav ul li
 {
   display: inline;
+}
+#headernav
+{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tasklist
+{
+  position: relative;
+  left: 200px;
+  top: 20px;
+  text-align: block;
+  margin-left: auto;
+  margin-right: auto;
 }
