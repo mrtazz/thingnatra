@@ -24,9 +24,14 @@ h1
 #tasklist
 {
   position: relative;
-  left: 200px;
+  left: 150px;
   top: 20px;
   text-align: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+div.task
+{
+  margin-bottom: 5px;
+  width: 700px;
+  border: 1px solid black;
 }
