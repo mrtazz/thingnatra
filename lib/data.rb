@@ -4,7 +4,11 @@ class Thingnatra
   class Data
 
     def initialize(things_data)
-      @things = Things.new(:database => things_data)
+      self.init_data(things_data)
+    end
+
+    def init_data(db_url)
+      @things = Things.new(:database => db_url)
       @box_map = {
                     :inbox => @things.inbox,
                     :today => @things.today,
