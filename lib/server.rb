@@ -33,12 +33,16 @@ class Thingnatra
       mustache :index
     end
 
-    #list of today items
+    #list of todos
     get '/things/:box/?' do |b|
       @tasks = @data.get_items(b.to_sym)
       mustache :today
     end
 
+    # settings menu
+    get '/settings/?' do
+      mustache :settings
+    end
 
 
   end

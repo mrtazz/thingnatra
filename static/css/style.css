@@ -5,7 +5,8 @@ body
 
 h1
 {
-  text-align: center;
+  position: relative;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,7 +17,8 @@ h1
 }
 #headernav
 {
-  text-align: center;
+  position: relative;
+  width: 350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,9 +26,19 @@ h1
 #tasklist
 {
   position: relative;
-  left: 150px;
   top: 20px;
-  text-align: block;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#settings
+{
+  position: relative;
+  top: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.task
@@ -35,4 +47,10 @@ div.task
   width: 700px;
   border: 1px solid black;
   background: #BDBDBD;
+}
+
+#things_text
+{
+    width: 200px;
+    margin-left: 10px;
 }
