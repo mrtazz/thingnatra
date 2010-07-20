@@ -1,7 +1,9 @@
 <div id="tasklist">
   <div id="tasks">
   {{# tasks}}
-    <div class=task><input type="checkbox" {{#done}} checked="checked" {{/done}}name="{{name}}"/> {{name}}</div>
+    <div class=task><input type="checkbox" {{#done}} checked="checked" {{/done}}name="{{name}}"/>
+        {{name}} [{{parent}}]
+    </div>
   {{/ tasks}}
   </div>
 </div>

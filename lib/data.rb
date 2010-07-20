@@ -21,9 +21,12 @@ class Thingnatra
       items = []
       context = @box_map[box]
       context.map do |t|
-        items << {:name => t.to_s}
+        items << {:name => t.to_s,
+                  :done => t.done?,
+                  :parent => (t.parent if t.parent?)
+                 }
       end
-      items
+      items.compact
     end
 
   end
