@@ -18,15 +18,7 @@ class Thingnatra
     end
 
     def get_items(box)
-      items = []
-      context = @box_map[box]
-      context.map do |t|
-        items << {:name => t.to_s,
-                  :done => t.done?,
-                  :parent => (t.parent if t.parent?)
-                 }
-      end
-      items.compact
+      @box_map[box]
     end
 
   end
