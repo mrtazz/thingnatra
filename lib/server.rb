@@ -35,7 +35,7 @@ class Thingnatra
 
     #list of todos
     get '/things/:box/?' do |b|
-      @tasks = @data.get_items(b.to_sym)
+      @tasks = @data.get_items_for(b.to_sym)
       mustache :today
     end
 

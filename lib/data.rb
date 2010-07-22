@@ -22,7 +22,7 @@ class Thingnatra
       end
     end
 
-    def get_items(box)
+    def get_items_for(box)
       @box_map[box]
     end
 
