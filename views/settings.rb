@@ -4,6 +4,10 @@ class Thingnatra
       def things_text
         @foo || "Things DB Path"
       end
+
+      def things_url
+        @things_db || ""
+      end
     end
   end
 end

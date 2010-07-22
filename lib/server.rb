@@ -41,6 +41,12 @@ class Thingnatra
 
     # settings menu
     get '/settings/?' do
+      @things_db = @data.get_things_url
+      mustache :settings
+    end
+
+    post '/settings/?' do
+
       mustache :settings
     end
 
