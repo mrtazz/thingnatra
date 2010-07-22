@@ -4,6 +4,7 @@ class Thingnatra
   class Data
 
     def initialize(things_data)
+      @things_data = things_data
       self.init_data(things_data)
     end
 
@@ -23,6 +24,10 @@ class Thingnatra
 
     def get_items(box)
       @box_map[box]
+    end
+
+    def get_things_url
+      @things_data
     end
 
   end
