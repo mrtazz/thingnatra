@@ -1,14 +1,15 @@
+require 'rubygems'
 require 'things'
+require 'exceptions'
 
 class Thingnatra
   class Data
 
     def initialize(things_data)
       if File.exists? things_data
-        @things_data = things_data
         self.init_data(things_data)
       else
-        None
+        raise Thingnatra::Exceptions::DatabaseFileError
       end
     end
 
@@ -27,7 +28,7 @@ class Thingnatra
     end
 
     def get_things_url
-      @things_data
+      @things.database_file
     end
 
   end
