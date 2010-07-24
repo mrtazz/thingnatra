@@ -1,0 +1,650 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>E8DAE23B-5B2F-44E3-9377-B6C874C301F5</UUID>
+        <nextObjectID>145</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>BuildNumber</key>
+                    <integer>1340</integer>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>251</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>Coworker</key>
+                        <data>
+		sUkYhaNoBrCwKhR37oCWF3oMlJ+X/0EWvkqloP0feV8=
+		</data>
+                        <key>Focus</key>
+                        <data>
+		uULbh3iyp5BG3KMX6idGxJMAibcC6yucan0Z01ggiIM=
+		</data>
+                        <key>Globals</key>
+                        <data>
+		EsSnzUzfT+sCc18tL8/ZLzYC6x+HuaeJzr/FmPXZ4wc=
+		</data>
+                        <key>Milestone</key>
+                        <data>
+		AshotdE+fvVYp6EK3DxEagqNUtde95dtva4bGCb5dP8=
+		</data>
+                        <key>MobileSyncItem</key>
+                        <data>
+		VrL112kTygkjSwwsxzR83KQFXxJn5HMkA97mXEFpjrI=
+		</data>
+                        <key>Note</key>
+                        <data>
+		udFXIE3oFQrQbh2Ju4FvwWc878b9vep6DW6zVipQvEc=
+		</data>
+                        <key>Record</key>
+                        <data>
+		hcEtJCAXFUdb13ax22/07sD5EsZ+4UyMSQODnU0LyiU=
+		</data>
+                        <key>Reminder</key>
+                        <data>
+		0VMtvPM/E/wh+TBTNHW5D5o9N4WXSeyTBjBHJHg89W0=
+		</data>
+                        <key>SyncedCalendar</key>
+                        <data>
+		uFecPv4qw/Ul/MnjxCEo207DnQN7DdkbvehReBug9BI=
+		</data>
+                        <key>SyncedTask</key>
+                        <data>
+		TXqtPJnhNwmeJWFf90FXFGdWKmcpjvlQRv34RXVaz30=
+		</data>
+                        <key>Tag</key>
+                        <data>
+		L9tlQ9OeHv0Nd5JzQ7T++N5lSPGZQs/yjZXVp2fatLI=
+		</data>
+                        <key>Team</key>
+                        <data>
+		2/JrXCDtsSp8yG/A4FwlD5t8RHQacaJUMl+GylaRkmU=
+		</data>
+                        <key>Thing</key>
+                        <data>
+		4+kUGDvoOAxogtkV5zqB5RB/mOBZDUXodM6PRiG18Ls=
+		</data>
+                        <key>ToDo</key>
+                        <data>
+		2BUb3z36nOAXYIHVSH0DBTMyHjMcy8yGVmmGt5lUGVc=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array></array>
+                    <key>OSMajorVersion</key>
+                    <integer>6</integer>
+                    <key>OSMinorVersion</key>
+                    <integer>4</integer>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="FOCUS" id="z102">
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">2</attribute>
+        <attribute name="identifier" type="string">FocusWorkflowHeading</attribute>
+        <attribute name="childrenhidden" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z128 z104 z131 z125 z111"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="TAG" id="z103">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">15min</attribute>
+        <attribute name="index" type="int32">11</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-15min</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z114"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z104">
+        <attribute name="focustype" type="int32">16777216</attribute>
+        <attribute name="focuslevel" type="int16">-1</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">2</attribute>
+        <attribute name="identifier" type="string">FocusTickler</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z102"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO" idrefs="z141"></relationship>
+    </object>
+    <object type="TAG" id="z105">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">Easy</attribute>
+        <attribute name="index" type="int32">14</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Easy</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z117"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z106">
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">FocusVerticalSpace</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="FOCUS" id="z107">
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">4</attribute>
+        <attribute name="identifier" type="string">FocusTeamworkHeading</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="TAG" id="z108">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string">h</attribute>
+        <attribute name="title" type="string">Home</attribute>
+        <attribute name="index" type="int32">4</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Home</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="TAG" id="z109">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">Challenge</attribute>
+        <attribute name="index" type="int32">15</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Challenge</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z117"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="TAG" id="z110">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string">2</attribute>
+        <attribute name="title" type="string">Medium</attribute>
+        <attribute name="index" type="int32">8</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Medium</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z124"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z111">
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">1</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="title" type="string">Projects</attribute>
+        <attribute name="index" type="int32">4</attribute>
+        <attribute name="identifier" type="string">FocusActivityLevel-1</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z102"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO" idrefs="z143"></relationship>
+    </object>
+    <object type="FOCUS" id="z112">
+        <attribute name="childrenhidden" type="bool">0</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">3</attribute>
+        <attribute name="identifier" type="string">FocusAreasHeading</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="TODO" id="z113">
+        <attribute name="status" type="int32">0</attribute>
+        <attribute name="focustype" type="int32">65536</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301694077.68466597795486450195</attribute>
+        <attribute name="datecreated" type="date">301657137.95767998695373535156</attribute>
+        <attribute name="title" type="string">test foo</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">34C0A566-8672-449E-B884-3C461E40193B</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z125"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TAG" id="z114">
+        <attribute name="compact" type="bool">0</attribute>
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">⨀</attribute>
+        <attribute name="index" type="int32">10</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Time</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z103 z118"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="TAG" id="z115">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string">e</attribute>
+        <attribute name="title" type="string">Errand</attribute>
+        <attribute name="index" type="int32">5</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Errand</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z116">
+        <attribute name="focustype" type="int32">512</attribute>
+        <attribute name="focuslevel" type="int16">-1</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">6</attribute>
+        <attribute name="identifier" type="string">FocusLogbook</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z133"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="TAG" id="z117">
+        <attribute name="compact" type="bool">0</attribute>
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">♨</attribute>
+        <attribute name="index" type="int32">13</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Energy</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z109 z105"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="TAG" id="z118">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">1h</attribute>
+        <attribute name="index" type="int32">12</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-1h</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z114"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z119">
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">5</attribute>
+        <attribute name="identifier" type="string">FocusVerticalSpring</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="FOCUS" id="z120">
+        <attribute name="focustype" type="int32">1</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">FocusInbox</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z134"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO" idrefs="z139"></relationship>
+    </object>
+    <object type="TAG" id="z121">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string">w</attribute>
+        <attribute name="title" type="string">Work</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Work</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="TAG" id="z122">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string">1</attribute>
+        <attribute name="title" type="string">High</attribute>
+        <attribute name="index" type="int32">7</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-High</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z124"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z123">
+        <attribute name="childrenhidden" type="bool">0</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">2</attribute>
+        <attribute name="identifier" type="string">FocusPlanHeading</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="TAG" id="z124">
+        <attribute name="compact" type="bool">0</attribute>
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string"></attribute>
+        <attribute name="title" type="string">‼</attribute>
+        <attribute name="index" type="int32">6</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Priority</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z110 z129 z122"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="FOCUS" id="z125">
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">1</attribute>
+        <attribute name="identifier" type="string">FocusNextActions</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z102"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO" idrefs="z137 z144 z140 z113"></relationship>
+    </object>
+    <object type="FOCUS" id="z126">
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">3</attribute>
+        <attribute name="identifier" type="string">FocusLevelsHeading</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z127"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="FOCUS" id="z127">
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">2</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="title" type="string">Areas</attribute>
+        <attribute name="index" type="int32">2</attribute>
+        <attribute name="identifier" type="string">FocusActivityLevel-2</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z126"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO" idrefs="z145"></relationship>
+    </object>
+    <object type="FOCUS" id="z128">
+        <attribute name="focustype" type="int32">33554432</attribute>
+        <attribute name="focuslevel" type="int16">-1</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">3</attribute>
+        <attribute name="identifier" type="string">FocusMaybe</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z102"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO" idrefs="z142"></relationship>
+    </object>
+    <object type="TAG" id="z129">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="shortcut" type="string">3</attribute>
+        <attribute name="title" type="string">Low</attribute>
+        <attribute name="index" type="int32">9</attribute>
+        <attribute name="identifier" type="string">CC-Things-Tag-Low</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z124"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE"></relationship>
+    </object>
+    <object type="GLOBALS" id="z130">
+        <attribute name="applicationquitdate" type="date">301694103.61674398183822631836</attribute>
+        <attribute name="maintenancedate" type="date">301615201.00000000000000000000</attribute>
+        <attribute name="cleanupdate" type="date">301657119.44840002059936523438</attribute>
+        <relationship name="scheduledtodos" type="0/0" destination="TODO" idrefs="z140 z141"></relationship>
+    </object>
+    <object type="FOCUS" id="z131">
+        <attribute name="focustype" type="int32">65536</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">FocusToday</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z102"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="FOCUS" id="z132">
+        <attribute name="focustype" type="int32">256</attribute>
+        <attribute name="focuslevel" type="int16">-1</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">7</attribute>
+        <attribute name="identifier" type="string">FocusTrash</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z133"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="FOCUS" id="z133">
+        <attribute name="compact" type="bool">0</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">6</attribute>
+        <attribute name="identifier" type="string">FocusArchiveHeading</attribute>
+        <attribute name="childrenhidden" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z116 z132"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="FOCUS" id="z134">
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="display" type="bool">1</attribute>
+        <attribute name="index" type="int32">1</attribute>
+        <attribute name="identifier" type="string">FocusCollectHeading</attribute>
+        <attribute name="childrenhidden" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z120"></relationship>
+        <relationship name="focustodos" type="0/0" destination="TODO"></relationship>
+    </object>
+    <object type="TAG" id="z135">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="dateused" type="date">301657184.64287698268890380859</attribute>
+        <attribute name="title" type="string">bla</attribute>
+        <attribute name="index" type="int32">3</attribute>
+        <attribute name="identifier" type="string">47A40AEE-96A5-4F7A-A394-BC2DF71038BA</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE" idrefs="z137"></relationship>
+    </object>
+    <object type="TAG" id="z136">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="dateused" type="date">301657184.64282602071762084961</attribute>
+        <attribute name="title" type="string">bar</attribute>
+        <attribute name="index" type="int32">1</attribute>
+        <attribute name="identifier" type="string">368CB22E-A7B1-4AC6-85E4-B638307C9746</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE" idrefs="z137"></relationship>
+    </object>
+    <object type="TODO" id="z137">
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301657363.67629599571228027344</attribute>
+        <attribute name="datecreated" type="date">301657162.38950699567794799805</attribute>
+        <attribute name="title" type="string">test foo 2</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">908AE6C7-D245-4398-BC9B-5FE3B8E62474</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z145"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z125"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z136 z135 z138"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TAG" id="z138">
+        <attribute name="type" type="int32">0</attribute>
+        <attribute name="dateused" type="date">301657184.64285302162170410156</attribute>
+        <attribute name="title" type="string">foo</attribute>
+        <attribute name="index" type="int32">2</attribute>
+        <attribute name="identifier" type="string">0DC09322-8244-4707-A5E3-72E6C3455C70</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="record" type="1/1" destination="RECORD"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="notes" type="0/0" destination="NOTE" idrefs="z137"></relationship>
+    </object>
+    <object type="TODO" id="z139">
+        <attribute name="status" type="int32">0</attribute>
+        <attribute name="content" type="string">\u3c00note xml:space="preserve"\u3e00blablu\u3c00/note\u3e00</attribute>
+        <attribute name="focustype" type="int32">1</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301694100.92413800954818725586</attribute>
+        <attribute name="datecreated" type="date">301657186.88097202777862548828</attribute>
+        <attribute name="title" type="string">blabla</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">6D6D9640-A6CA-4925-AF9A-2BF9B0162CE7</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z120"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TODO" id="z140">
+        <attribute name="status" type="int32">0</attribute>
+        <attribute name="datedue" type="date">333151200.00000000000000000000</attribute>
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301694077.68458098173141479492</attribute>
+        <attribute name="datecreated" type="date">301657203.55241000652313232422</attribute>
+        <attribute name="title" type="string">foo due</attribute>
+        <attribute name="index" type="int32">1</attribute>
+        <attribute name="identifier" type="string">55542ED3-4BC6-4E45-8275-B90B1EFEB1A4</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z125"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS" idrefs="z130"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TODO" id="z141">
+        <attribute name="recurrenceruledata" type="binary">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBV
+QkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+ZW5kRGF0ZTwva2V5PgoJPGRhdGU+NDAwMC0xMi0zMVQyMzowMDowMFo8L2RhdGU+Cgk8a2V5PmZyZXF1ZW5jeUFtb3VudDwva2V5PgoJPGludGVnZXI+MTwvaW50ZWdlcj4KCTxrZXk+ZnJlcXVlbmN5VW5pdDwva2V5PgoJPGludGVnZXI+MjU2PC9pbnRlZ2VyPgoJPGtleT5pc1BhdXNlZDwva2V5PgoJPGZhbHNlLz4KCTxrZXk+b2Zmc2V0czwva2V5PgoJPGFycmF5PgoJCTxkaWN0PgoJCQk8a2V5PndlZWtkYXk8L2tleT4KCQkJPGludGVnZXI+MjwvaW50ZWdlcj4KCQk8L2RpY3Q+Cgk8L2FycmF5PgoJPGtleT5yZXBlYXRDb3VudDwva2V5PgoJPGludGVnZXI+MDwvaW50ZWdlcj4KCTxrZXk+c3RhcnREYXRlPC9rZXk+Cgk8ZGF0ZT4yMDEwLTA3LTI1VDIyOjAwOjAwWjwvZGF0ZT4KCTxrZXk+dGltZVNwYW5JbkRheXM8L2tleT4KCTxpbnRlZ2VyPjA8L2ludGVnZXI+Cgk8a2V5PnR5cGU8L2tleT4KCTxpbnRlZ2VyPjA8L2ludGVnZXI+CjwvZGljdD4KPC9wbGlzdD4K
+</attribute>
+        <attribute name="focustype" type="int32">16777216</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301657303.03793299198150634766</attribute>
+        <attribute name="datecreated" type="date">301657294.39399498701095581055</attribute>
+        <attribute name="title" type="string">scheduled foo</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">20EF448D-049B-4EA8-9D56-E0E8596D5B6E</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z104"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS" idrefs="z130"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TODO" id="z142">
+        <attribute name="focustype" type="int32">33554432</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301657313.39923399686813354492</attribute>
+        <attribute name="datecreated" type="date">301657308.37131398916244506836</attribute>
+        <attribute name="title" type="string">blabla</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">247AAE78-2ECA-4F42-BC17-A1E3AEB394A9</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z128"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TODO" id="z143">
+        <attribute name="status" type="int32">0</attribute>
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">1</attribute>
+        <attribute name="datemodified" type="date">301657326.38943099975585937500</attribute>
+        <attribute name="datecreated" type="date">301657317.94195997714996337891</attribute>
+        <attribute name="title" type="string">foo project</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">3B17D4C2-522F-4C07-9610-4294DE28968E</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z111"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z144"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TODO" id="z144">
+        <attribute name="status" type="int32">0</attribute>
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">0</attribute>
+        <attribute name="datemodified" type="date">301694094.39556497335433959961</attribute>
+        <attribute name="datecreated" type="date">301657326.38983899354934692383</attribute>
+        <attribute name="title" type="string">project todo</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">89358275-994D-4464-B565-0507295C8F09</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING" idrefs="z143"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z125"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+    <object type="TODO" id="z145">
+        <attribute name="focustype" type="int32">131072</attribute>
+        <attribute name="focuslevel" type="int16">2</attribute>
+        <attribute name="datemodified" type="date">301657353.03057199716567993164</attribute>
+        <attribute name="datecreated" type="date">301657348.70979797840118408203</attribute>
+        <attribute name="title" type="string">foo area</attribute>
+        <attribute name="index" type="int32">0</attribute>
+        <attribute name="identifier" type="string">588C6A60-71A3-445E-8737-3C4E5F3DDD39</attribute>
+        <attribute name="compact" type="bool">1</attribute>
+        <relationship name="parent" type="1/1" destination="THING"></relationship>
+        <relationship name="author" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="delegate" type="1/1" destination="COWORKER"></relationship>
+        <relationship name="focus" type="1/1" destination="FOCUS" idrefs="z127"></relationship>
+        <relationship name="recurrenceinstance" type="1/1" destination="TODO"></relationship>
+        <relationship name="recurrencetemplate" type="1/1" destination="TODO"></relationship>
+        <relationship name="scheduler" type="1/1" destination="GLOBALS"></relationship>
+        <relationship name="syncdata" type="1/1" destination="SYNCEDTASK"></relationship>
+        <relationship name="children" type="0/0" destination="THING" idrefs="z137"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG"></relationship>
+        <relationship name="reminderdates" type="0/0" destination="REMINDER"></relationship>
+    </object>
+</database>
