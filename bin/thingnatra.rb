@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'lib/server'
+$:.unshift(File.dirname(__FILE__) + "/../lib/")
+require 'server'
 
 Thingnatra::Server.run!
