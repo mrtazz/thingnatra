@@ -11,10 +11,12 @@ class Thingnatra
         Thingnatra::Server
       end
 
-      def test_index_page
+      def test_index_page_redirect
         get '/'
+        follow_redirect!
+
+        assert_equal "http://example.org/things/today", last_request.url
         assert last_response.ok?
-        assert last_response.body.include?('Today')
       end
 
     end
