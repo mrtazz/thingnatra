@@ -46,7 +46,6 @@ class Thingnatra
     end
 
     post '/settings/?' do
-
       mustache :settings
     end
 
