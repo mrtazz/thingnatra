@@ -30,7 +30,7 @@ class Thingnatra
 
     # index page
     get '/?' do
-      mustache :index
+      redirect '/things/today'
     end
 
     #list of todos
