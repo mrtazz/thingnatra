@@ -20,6 +20,7 @@ class Thingnatra
                     :today => @things.today,
                     :next => @things.next,
                     :scheduled => @things.scheduled,
+                    :logbook => @things.logbook,
                 }
     end
 
