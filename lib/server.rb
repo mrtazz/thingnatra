@@ -25,7 +25,7 @@ class Thingnatra
     # call super and initialize @data variable
     def initialize(*args)
       super
-      @data = Thingnatra::Data.new('Database.xml')
+      @data = Thingnatra::Data.new('test/Database.xml')
     end
 
     # index page
