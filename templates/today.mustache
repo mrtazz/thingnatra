@@ -2,8 +2,10 @@
   <div id="tasks">
   {{# tasks}}
     <div class=task>
-        <input type="checkbox" {{#done?}} checked="checked" {{/done?}}
-        name="{{to_s}}"/> {{to_s}} {{#parent?}}[{{parent}}]{{/parent?}}
+        <input class="taskcheckbox task" type="checkbox"
+               {{#done?}} checked="checked" {{/done?}} name="{{to_s}}"/>
+        <span class="tasktext task">{{to_s}} {{#parent?}}[{{parent}}]{{/parent?}}
+        </span>
     </div>
   {{/ tasks}}
   </div>

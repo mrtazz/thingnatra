@@ -1,6 +1,7 @@
 body
 {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #999999;
 }
 
 h1
@@ -27,7 +28,7 @@ h1
 {
   position: relative;
   top: 20px;
-  width: 700px;
+  width: 580px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
@@ -45,9 +46,19 @@ h1
 div.task
 {
   margin-bottom: 5px;
-  width: 700px;
-  border: 1px solid black;
-  background: #BDBDBD;
+  width: 600px;
+  height: 22px;
+  /*border: 1px solid black;*/
+  background: #DDDDDD;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.task
+{
+    position: relative;
+    top: 2px;
+    left: 5px;
 }
 
 #things_text
@@ -55,3 +66,19 @@ div.task
     width: 200px;
     margin-left: 10px;
 }
+
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
