@@ -7,7 +7,7 @@ class Thingnatra
     class IndexTest < Test::Unit::TestCase
 
       def setup
-        @data = Thingnatra::Data.new('Database.xml')
+        @data = Thingnatra::Data.new('test/Database.xml')
       end
 
       def test_data_is_things_document
