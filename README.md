@@ -11,15 +11,10 @@ somewhere else.
 
 ## Dependencies
 
-* sintra (obviously)
+* sinatra
 * mustache
 * things-rb
-* ...
-
-## Installation & Usage
-This is heavily WIP at the moment. Anything can/will change at anytime and
-might or might not work. Your data could be messed up/lost/changed to something
-else. So please only use it if you understand what that means.
+* rack-test
 
 [1]: http://culturedcode.com/things
 [2]: http://culturedcode.com
