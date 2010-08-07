@@ -46,6 +46,9 @@ class Thingnatra
     end
 
     post '/settings/?' do
+      things_db = params[:thingsdb]
+      @data.set_things_url things_db
+      @things_db = @data.get_things_url
       mustache :settings
     end
 
