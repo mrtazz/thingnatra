@@ -1,9 +1,9 @@
 <div id="settings">
-<FORM action="/settings" method="post">
-    <P>
-    <LABEL for="thingsdb_url">{{things_text}}: </LABEL>
-              <INPUT type="text" id="thingsdb" value="{{things_url}}"><BR>
-    <INPUT type="submit" value="Send"> <INPUT type="reset">
-    </P>
- </FORM>
+<form action="/settings" method="post">
+    <p>
+    <label for="thingsdb">{{things_text}}: </label>
+    <input type="text" id="thingsdb" name="thingsdb" value="{{things_url}}"><br>
+    <input type="submit" value="Send"> <input type="reset">
+    </p>
+ </form>
 </div>
