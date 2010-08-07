@@ -32,5 +32,9 @@ class Thingnatra
       @things.database_file
     end
 
+    def set_things_url(url)
+      self.init_data(url)
+    end
+
   end
 end
